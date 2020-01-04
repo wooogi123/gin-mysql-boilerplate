@@ -97,7 +97,7 @@ func (u User) Update(userPayload forms.UserUpdate) (user User, err error) {
 
   stmt, err := db.Prepare(`
     UPDATE Users
-    SET Users.nickname = ?, Users.password = ?, Users.group = ?, Users.star = ?, Users.finish_count = ?, Users.point = ?
+    SET Users.nickname = ?, Users.password = ?, Users.group = ?, Users.star = ?, Users.finish_count = ?, Users.point = ?, Users.updated_at = CURRENT_TIMESTAMP
     WHERE Users.id = ?
   `)
   if err != nil {
