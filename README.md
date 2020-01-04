@@ -3,7 +3,7 @@ Gin(golang) + Mariadb(mysql) Boilerplate
 
 ### Installation
 ```
-$ go get github.com/wooogi123/gin-mysql-boilerplate
+$ git clone https://github.com/wooogi123/gin-mysql-boilerplate.git
 ```
 
 ### Running Application
