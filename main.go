@@ -1,23 +1,23 @@
 package main
 
 import (
-  "log"
+	"log"
 
-  "github.com/gin-gonic/gin"
-  "./controllers"
+	"./controllers"
+	"github.com/gin-gonic/gin"
 )
 
 var userControl = new(controllers.UserController)
 
 func main() {
-  router := gin.Default()
+	router := gin.Default()
 
-  Users := router.Group("/Users")
-  {
-    Users.POST("/SignIn", userControl.SignIn)
-    Users.POST("/SignUp", userControl.SignUp)
-    Users.POST("/Update", userControl.Update)
-  }
+	Users := router.Group("/Users")
+	{
+		Users.POST("/SignIn", userControl.SignIn)
+		Users.POST("/SignUp", userControl.SignUp)
+		Users.POST("/Update", userControl.Update)
+	}
 
-  log.Fatal(router.Run())
+	log.Fatal(router.Run())
 }
