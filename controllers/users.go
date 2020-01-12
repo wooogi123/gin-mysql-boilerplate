@@ -4,8 +4,8 @@ import (
   "log"
   "net/http"
   "github.com/gin-gonic/gin"
-  "github.com/wooogi123/gin-mysql-boilerplate/forms"
-  "github.com/wooogi123/gin-mysql-boilerplate/models"
+  "../forms"
+  "../models"
 )
 
 type UserController struct{}

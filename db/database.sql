@@ -1,5 +1,16 @@
--- MySQL dump 10.16  Distrib 10.1.41-MariaDB, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.16  Distrib 10.1.43-MariaDB, for debian-linux-gnu (x86_64)
 --
+-- Host: localhost    Database: gin-mysql
+-- ------------------------------------------------------
+-- Server version	10.1.43-MariaDB-0ubuntu0.18.04.1
+
+--
+-- Current Database: `gin-mysql`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `gin-mysql` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+
+USE `gin-mysql`;
 
 --
 -- Table structure for table `Users`
@@ -21,5 +32,6 @@ CREATE TABLE `Users` (
   `updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `nickname` (`nickname`),
-  UNIQUE KEY `email` (`email`),
-) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4;
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;

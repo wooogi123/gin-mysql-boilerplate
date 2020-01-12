@@ -4,7 +4,7 @@ import (
   "log"
 
   "github.com/gin-gonic/gin"
-  "github.com/wooogi123/gin-mysql-boilerplage/controllers"
+  "./controllers"
 )
 
 var userControl = new(controllers.UserController)
