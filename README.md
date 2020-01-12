@@ -20,14 +20,14 @@ $ ./gin-mysql-boilerplate
 ### Requirement
  - Environment on Linux
  ```
- export DB_USER={YOUR_DB_USERNAME}
- export DB_PASSWORD={YOUR_DB_PASSWORD}
- export DB_NAME={YOUR_DB_NAME}
- export DB_HOST={YOUR_DB_HOST}
- export DB_PORT={YOUR_DB_PORT}
+ export DB_USER=**YOUR_DB_USERNAME**
+ export DB_PASSWORD=**YOUR_DB_PASSWORD**
+ export DB_NAME=**YOUR_DB_NAME**
+ export DB_HOST=**YOUR_DB_HOST**
+ export DB_PORT=**YOUR_DB_PORT**
  ```
 
  - Database on Linux
  ```
- mysql -u{YOUR_DB_USERNAME} -p < db/database.sql
+ mysql -u**YOUR_DB_USERNAME**-p < db/database.sql
  ```
