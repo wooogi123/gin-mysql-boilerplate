@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"./controllers"
 	"github.com/gin-gonic/gin"
+	"github.com/wooogi123/gin-mysql-boilerplate/controllers"
 )
 
 var userControl = new(controllers.UserController)

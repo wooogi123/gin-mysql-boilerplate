@@ -1,8 +1,8 @@
 package models
 
 import (
-	"../db"
-	"../forms"
+	"github.com/wooogi123/gin-mysql-boilerplate/db"
+	"github.com/wooogi123/gin-mysql-boilerplate/forms"
 )
 
 type User struct {
@@ -90,7 +90,7 @@ func (u User) Update(userPayload forms.UserUpdate) (user User, err error) {
         FROM Users
         WHERE Users.email = ? AND Users.password = ?
     `, user.Email, user.Password)
-    err = row.Scan(&user.Id)
+	err = row.Scan(&user.Id)
 	if err != nil {
 		return
 	}

@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"../forms"
-	"../models"
 	"github.com/gin-gonic/gin"
+	"github.com/wooogi123/gin-mysql-boilerplate/forms"
+	"github.com/wooogi123/gin-mysql-boilerplate/models"
 	"log"
 	"net/http"
 )
